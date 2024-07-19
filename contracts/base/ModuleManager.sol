@@ -223,9 +223,9 @@ abstract contract ModuleManager is SelfAuthorized, Executor, IModuleManager {
           because the `next` variable (which is a module by itself) acting as a pointer to the start of the next page is neither 
           included to the current page, nor will it be included in the next one if you pass it as a start.
         */
-        
+
         next = array[moduleCount - 1];
-        
+
         // Set correct size of returned array
         /* solhint-disable no-inline-assembly */
         /// @solidity memory-safe-assembly
